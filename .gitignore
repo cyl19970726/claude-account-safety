@@ -1,0 +1,23 @@
+# Secrets and machine-specific reports
+secrets.env
+*.secret
+*.secret.*
+*.age
+*.gpg
+clash/profile.yaml
+clash/*.yaml
+
+# Generated reports may contain hostnames/IPs
+machine-profile.json
+egress.json
+setup-report.md
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store
+
+# Packages
+dist/
+*.tar.gz
+*.tar.gz.sha256

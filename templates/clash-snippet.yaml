@@ -1,0 +1,29 @@
+# 仅作结构示例，不含任何真实服务器、订阅、UUID、密码。
+# 把 CLAUDE_EXIT 替换为你自己的策略组/节点名，并在本地客户端里验证。
+# 不要把真实配置提交到公开仓库。
+
+proxies:
+  - name: "CLAUDE_EXIT"
+    type: socks5
+    server: "127.0.0.1"
+    port: 1080
+    udp: false
+
+proxy-groups:
+  - name: "CLAUDE"
+    type: select
+    proxies:
+      - "CLAUDE_EXIT"
+
+rules:
+  # 先禁 QUIC/UDP 443，避免浏览器会话粘滞旧出口。
+  - AND,((DST-PORT,443),(NETWORK,UDP)),REJECT
+
+  - DOMAIN-SUFFIX,claude.ai,CLAUDE
+  - DOMAIN-SUFFIX,claude.com,CLAUDE
+  - DOMAIN-SUFFIX,anthropic.com,CLAUDE
+  - DOMAIN-SUFFIX,claudeusercontent.com,CLAUDE
+  - DOMAIN-SUFFIX,statsig.com,CLAUDE
+
+  # 不要把所有流量都塞进 CLAUDE；按你的实际规则集补全。
+  - MATCH,CLAUDE
