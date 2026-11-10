@@ -195,6 +195,7 @@ python3 -m unittest discover -s tests -v
 | 采购链接/订阅 URL/凭据保护 | `references/12-secrets.md` |
 | 本机 Claude 残留审计与可恢复清理 | `references/13-local-cleanup.md` |
 | Claude Code 本机记录与 compact 摘要 | `references/14-claude-code-local-data.md` |
+| NodeMaven 美国静态 ISP（推荐候选） | `references/15-nodemaven.md` |
 
 ## 交付语气
 

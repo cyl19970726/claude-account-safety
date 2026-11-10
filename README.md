@@ -7,6 +7,7 @@
 - 一个 Agent Skill：`SKILL.md` 定义工作流、门禁和交付格式。
 - 一套跨平台只读体检脚本：macOS / Windows / Linux。
 - 本机 Claude 残留只读审计：缓存、日志、桌面数据、CLI 配置分类；默认不删除。
+- 推荐出口候选：NodeMaven 美国静态 ISP（HTTP 直连，不走 ProxyEmpire/VPS）；见 `references/15-nodemaven.md`。
 - 一套新机器安装器：把 Skill 复制到 Codex / Claude / 通用 Agent 的 skills 目录。
 - 一套验收清单：网络出口、DNS、WebRTC、IPv6、时区/语言、Claude Code、账号卫生。
 

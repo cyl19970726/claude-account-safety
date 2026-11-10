@@ -33,6 +33,7 @@ def main() -> int:
         "references/12-secrets.md",
         "references/13-local-cleanup.md",
         "references/14-claude-code-local-data.md",
+        "references/15-nodemaven.md",
         "scripts/doctor.py",
         "scripts/egress_check.py",
         "scripts/plan.py",
