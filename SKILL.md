@@ -169,6 +169,7 @@ python3 scripts/secret_ref.py --copy "keychain://claude-account-safety/proxy-sub
 
 # 本机 Claude 残留只读审计（不删除）
 python3 scripts/cleanup_audit.py
+python3 scripts/cleanup_audit.py --compaction-stats
 
 # 自测（开发用）
 python3 -m unittest discover -s tests -v
@@ -193,6 +194,7 @@ python3 -m unittest discover -s tests -v
 | 出口选型（BYO，不带商家） | `references/11-egress-options.md` |
 | 采购链接/订阅 URL/凭据保护 | `references/12-secrets.md` |
 | 本机 Claude 残留审计与可恢复清理 | `references/13-local-cleanup.md` |
+| Claude Code 本机记录与 compact 摘要 | `references/14-claude-code-local-data.md` |
 
 ## 交付语气
 

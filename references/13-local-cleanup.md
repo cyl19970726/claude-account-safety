@@ -25,6 +25,8 @@ python3 scripts/cleanup_audit.py --json --output cleanup-audit.json
 
 它只读，不删除、不移动任何文件。
 
+想看 Claude Code 的完整会话记录、prompt 历史和 compact 摘要落在哪，见 `14-claude-code-local-data.md`。`cleanup_audit.py --compaction-stats` 会统计 `projects/**/*.jsonl` 的行数、`compact_boundary` 和 `isCompactSummary`，不打印内容。
+
 ## 分类
 
 | 类别 | 典型内容 | 默认 |
@@ -44,6 +46,8 @@ python3 scripts/cleanup_audit.py --json --output cleanup-audit.json
 4. 先清理 `cache`/`logs`；`desktop_data`/`cli_config` 逐项确认。
 5. 需要卸载时走官方卸载流程；不要手工删系统组件。
 6. 重新安装后重新登录，检查 `Settings > Account > Active sessions`。
+
+注意：`projects/` 和 `history.jsonl` 默认是 **NEVER-DELETE**；它们可能包含申诉证据、token、`.env` 和工具输出。要删除必须先导出/备份并逐项确认。
 
 ## 不要做
 

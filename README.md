@@ -95,7 +95,7 @@ claude-account-safety/
 │   ├── verify.py                # 验收
 │   ├── secret_check.py          # 安装前 secret 扫描
 │   ├── secret_ref.py            # 不打印明文的 secret 引用解析
-│   ├── cleanup_audit.py         # 本机 Claude 残留只读审计
+│   ├── cleanup_audit.py         # 本机 Claude 残留只读审计 + compact 统计
 │   └── selftest.py              # 自测
 ├── templates/
 │   ├── new-machine-prompt.md    # 新机器开场提示词

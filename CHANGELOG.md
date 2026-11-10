@@ -10,3 +10,4 @@
 - 增加 macOS/Windows/Linux 新机器步骤与模板。
 - 增加出口选型评估维度（不含商家列表、affiliate 或个人订阅）。
 - 增加本机 Claude 残留只读审计（不删除、不轮换设备 ID）。
+- 增加 Claude Code 本机记录/compact 摘要说明与 JSONL 统计。

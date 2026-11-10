@@ -32,6 +32,7 @@ def main() -> int:
         "references/11-egress-options.md",
         "references/12-secrets.md",
         "references/13-local-cleanup.md",
+        "references/14-claude-code-local-data.md",
         "scripts/doctor.py",
         "scripts/egress_check.py",
         "scripts/plan.py",
